@@ -29,9 +29,9 @@ body{
     
 }
 .pupil{
-    background: url('images/pupilGreen.png') no-repeat center center;
-    background-size:contain;
-    
+    /*background: url('images/pupilGreen.png') no-repeat center center;
+    background-size:contain;*/
+    background-color: #000;
     width: 30px;
     height: 30px;
     border-radius: 50%;
