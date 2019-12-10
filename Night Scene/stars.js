@@ -1,7 +1,7 @@
 var canvas = $('#canvas');
 var cWidth = canvas.width();
 var cHeight = canvas.height();
-var numStars = 4000;
+var numStars = 500;
 var starWrapper = $('#starWrapper');
 
 
@@ -26,7 +26,7 @@ for( var i=0; i<allStars.length; i++ ){
 	var tweenDuration = Math.random() * 2 + .5; //2 + i/10;
 	var currStar = "#star" + i;
 	//TweenMax.to(currStar,tweenDuration, {y:20, ease:Sine.easeInOut, repeat:-1, yoyo:true});
-	//TweenMax.to(currStar,tweenDuration, {scale:.2, ease:Sine.easeInOut, repeat:-1, yoyo:true});
+	TweenMax.to(currStar,tweenDuration, {scale:.2, ease:Sine.easeInOut, repeat:-1, yoyo:true});
 }
 
 TweenMax.to('#shootingStar', 4, {x:cWidth*2,scale:.2, y:200, repeat:-1});
